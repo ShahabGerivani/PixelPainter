@@ -1,0 +1,66 @@
+@-webkit-keyframes moving-rainbow-title {
+  to {
+    background-position: right;
+  }
+}
+@keyframes moving-rainbow-title {
+  to {
+    background-position: right;
+  }
+}
+#rainbow-title {
+  background-image: -webkit-gradient(linear, right top, left top, from(violet), color-stop(indigo), color-stop(blue), color-stop(green), color-stop(yellow), color-stop(orange), to(red));
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  background-repeat: repeat-x;
+  background-size: 200px;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  text-align: center;
+  -webkit-animation: moving-rainbow-title 7s linear infinite;
+          animation: moving-rainbow-title 7s linear infinite;
+}
+
+#painting-area {
+  display: -ms-grid;
+  display: grid;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.pixel {
+  border: 1px solid black;
+  background-color: transparent;
+}
+.pixel:hover {
+  background-color: #ccc;
+}
+
+#options {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 2em;
+}
+
+.option-wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+label {
+  margin-right: 1em;
+}

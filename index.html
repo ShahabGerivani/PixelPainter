@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>PixelPainter</title>
+  </head>
+  <body>
+
+    <h1 id="rainbow-title">PixelPainter</h1>
+
+    <div id="painting-area"></div>
+
+    <form id="options">
+      
+      <div class="option-wrapper">
+        <label for="color">Color</label>
+        <input type="color" name="color" id="color">
+      </div>
+
+      <div class="option-wrapper">
+        <label for="action">Action</label>
+        <select name="action" id="action">
+          <option value="paint" title="paint">🖌️</option>
+          <option value="erase" title="erase">🧽</option>
+        </select>
+      </div>
+
+      <div class="option-wrapper">
+        <input type="button" value="Clear" id="clear">
+      </div>
+
+    </form>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

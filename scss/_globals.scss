@@ -1,0 +1,13 @@
+@keyframes moving-rainbow-title {
+    to {background-position: right;}
+  }
+  
+  #rainbow-title {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    background-repeat: repeat-x;
+    background-size: 200px;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    animation: moving-rainbow-title 7s linear infinite;
+  }
